@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:myfirstapp="clr-namespace:MyFirstApp"
+            x:Class="MyFirstApp.MainPage"
+            NavigationPage.HasNavigationBar="False"
+            Title="Flyout page">
+
+    <FlyoutPage.Flyout>
+        <ContentPage BackgroundColor="White" Title="Menu">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                <Image Source="icon.jpeg" HorizontalOptions="Start" HeightRequest="40"/>
+                <Label Text="Kayla" TextColor="Black" FontSize="Medium"/>
+
+            </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                    <Label Text="Edit your profile" TextColor="Black" FontSize="Small"/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                    <Button Text="Payment" TextColor="Black" FontSize="Body" />
+
+                    <Button Text="Promotions" TextColor="Black" FontSize="Body"/>
+                    <Button Text="Ride History" TextColor="Black" FontSize="Body"/>
+                    <Button Text="Work Rides" TextColor="Black" FontSize="Body"/>
+                    <Button Text="Support" TextColor="Black" FontSize="Body"/>
+                    <Button Text="About" TextColor="Black" FontSize="Body"/>
+                    <Button Text="Bolt Food" TextColor="Black" FontSize="Body"/>
+
+                </StackLayout>
+                    <Button Text="Become a driver" TextColor="White" FontSize="Body" BackgroundColor="ForestGreen" VerticalOptions="End"/>
+                <StackLayout>
+                    
+                </StackLayout>
+
+            </StackLayout>
+            
+        </ContentPage>
+
+    </FlyoutPage.Flyout>
+
+
+<FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <myfirstapp:HomePage/>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

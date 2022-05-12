@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.HomePage">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Image Source="map.png"/>
+
+            <SearchBar Placeholder="Where to?"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+
+            <Button Text="Home"
+                    FontSize="Body"
+                    VerticalOptions="End"
+                    BackgroundColor="White"
+                    Clicked="Home_Button_Clicked"/>
+
+            <Button Text="Spar"
+                    FontSize="Body"
+                    VerticalOptions="End"
+                    BackgroundColor="White"
+                    Clicked="Spar_Button_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
